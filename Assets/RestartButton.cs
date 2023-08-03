@@ -11,11 +11,10 @@ public class RestartButton : MonoBehaviour
 
     private void Start()
     {
-        
-
+       
     }
 
-    public void RestartScene()
+    private void RestartScene()
     {
         // Reset the line renderer
         LineDrawer.ResetLine();
@@ -28,6 +27,6 @@ public class RestartButton : MonoBehaviour
         }
 
         // Spawn new circles
-        LineDrawer.SpawnCircles();
+       LineDrawer.SpawnCircles();
     }
 }
