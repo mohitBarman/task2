@@ -71,7 +71,7 @@ public class drawline : MonoBehaviour
         {
             GameObject circle = circles[i];
 
-            if (circle == null) // Check if the circle object has been destroyed
+            if (circle == null) 
             {
                 circles.RemoveAt(i);
                 continue;
