@@ -91,6 +91,7 @@ public class CircleSpawner : MonoBehaviour
     {
         Vector3 direction = GetMouseWorldPosition() - lineStart;
         Ray lineRay = new Ray(lineStart, direction);
+
         RaycastHit[] hits = Physics.RaycastAll(lineRay, direction.magnitude);
 
         foreach (RaycastHit hit in hits)
